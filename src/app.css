@@ -1,0 +1,29 @@
+.small-card {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0.6);
+    opacity: 0.6;
+}
+
+.big-card {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.2); /* You can adjust the scale factor for the big card. */
+}
+
+.small-card:hover {
+    opacity: 0.8; /* Make it fully opaque on hover */
+}
+
+/* Clear custom classes at or above 1200px */
+@media (max-width: 1200px) {
+    .small-card,
+    .big-card,
+    .small-card:hover {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
